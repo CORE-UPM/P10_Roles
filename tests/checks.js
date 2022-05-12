@@ -262,6 +262,7 @@ describe("Tests Práctica 9", function() {
                     await browser.visit("/posts/1/edit");
                 }catch(e) {
                     browser.assert.status(403);
+                    return;
                 }
                 browser.location.href.includes('/login').should.be.equal(true);
             }]);
@@ -331,10 +332,20 @@ describe("Tests Práctica 9", function() {
                 await browser.pressButton('#enviar');
                 browser.assert.status(200);
                 const post_path = browser.location.pathname;
+                await browser.visit("/posts");
+                let html_txt = browser.html();
                 log("POST CREADO. URL devuelta: " + post_path);
-                browser.html().includes(post_path + '/edit').should.be.equal(true);
+                await browser.visit(post_path);
+                html_txt += browser.html();
+
+                this.msg_err = "No se encuentra el botón de edición en el index o en show";
+                html_txt.includes(post_path + '/edit').should.be.equal(true);
                 // Intentar borrar para no molestar en el resto.
-                await browser.visit(browser.location.href + '?_method=DELETE');
+                try { 
+                    await browser.visit(post_path + '?_method=DELETE');
+                }catch (e){
+                    log("No se pudo borrar el post", e)
+                }
             }]);
         });
 
