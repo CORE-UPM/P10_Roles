@@ -46,7 +46,7 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 ## Tareas
 
-### Tarea 1 - Copiar el trabajo ya realizado en la Entrega 8 Autores
+### Tarea 1 - Copiar el trabajo ya realizado en la Entrega 9 Autores
 
 En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 9.
 
