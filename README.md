@@ -9,7 +9,7 @@ Versión: 25 de Enero de 2023
 
 ## Descripción de la práctica
 
-En esta práctica 9 se ampliará la **Práctica 8 Autores** añadiendo un sistema de permisos que limiten
+En esta práctica 10 se ampliará la **Práctica 9 Autores** añadiendo un sistema de permisos que limiten
 las operaciones que puede hacer un usuario en funcion de su rol.
 
 Estas limitaciones deben añadirse en los controladores, en las definiciones de rutas y en las vistas.
@@ -48,16 +48,16 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 ### Tarea 1 - Copiar el trabajo ya realizado en la Entrega 8 Autores
 
-En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 8.
+En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 9.
 
-El alumno debe copiar el directorio **blog** de la **Entrega8_autores** en el directorio **P9_Roles/blog** de
-esta práctica 9. Las tareas a realizar en esta práctica 9 de desarrollarán dentro del directorio **P9_Roles/blog**.
+El alumno debe copiar el directorio **blog** de la **Entrega9_autores** en el directorio **P10_Roles/blog** de
+esta práctica 10. Las tareas a realizar en esta práctica 10 de desarrollarán dentro del directorio **P10_Roles/blog**.
 
-Para copiar/duplicar el directorio **Entrega8_autores/blog** en el directorio **P9_Roles/blog**, puede usar un
+Para copiar/duplicar el directorio **Entrega9_autores/blog** en el directorio **P10_Roles/blog**, puede usar un
 explorador de archivos. Asegúrese de copiar el directorio y no de moverlo de sitio, para no perder el trabajo original.
 También puede ejecutar el siguiente comando en un terminal unix para copiar el directorio y todo su contenido:
 
-    $ cp -r PATH_DE_PRACTICA_8/Entrega8_autores/blog PATH_DE_PRACTICA_9/P9_Roles/.
+    $ cp -r PATH_DE_PRACTICA_9/Entrega9_autores/blog PATH_DE_PRACTICA_10/P10_Roles/.
 
 
 Ejecutar las migraciones de las prácticas anteriores en el caso de que no se haya copiado el archivo **.sqlite** con la base de datos:
