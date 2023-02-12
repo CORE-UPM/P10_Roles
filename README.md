@@ -124,8 +124,30 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 Capturas a entregar con esta práctica: 
 
-- Captura 1:
-- Captura 2:
+- Captura 1: Captura de la pantalla que muestra el listado de todos los posts.
+  Realice esta captura cuando no hay nadie logueado para que no aparezcan los botones de editar o borrar los posts existentes.
+  Tampoco debe aparecer el botón de listar todos los usuarios en la barra de navegación.
+  Realice la captura de forma que se vea el botón de login en la cabecera de la pantalla.
+<kbd>
+<img src="https://github.com/CORE-UPM/P10_Roles/blob/master/Captura.10.1.png" alt="captura de pantalla" width="500"/>
+</kbd>
+
+- Captura 2: Captura de la pantalla que muestra el listado de todos los posts.
+  Realice esta captura cuando el usuario logueado no es un administrador. Deben verse los botones de editar y borrar los posts creados por el usuario logueado.
+  No debe verse el botón de listar todos los usuarios en la barra de navegación.
+  Y en la cabecera de la pantalla debe mostrarse el nombre del usuario logueado y el botón de logout.
+<kbd>
+<img src="https://github.com/CORE-UPM/P10_Roles/blob/master/Captura.10.2.png" alt="captura de pantalla" width="500"/>
+</kbd>
+
+- Captura 3: Captura de la pantalla que muestra el listado de todos los posts.
+  Realice esta captura cuando el usuario logueado es admin. 
+  Deben verse los botones de editar y borrar en todos posts.
+  También debe aparecer el botón de listar todos los usuarios en la barra de navegación.
+  Realice la captura de forma que se vea el nombre admin y el botón de logout en la cabecera de la pantalla.
+<kbd>
+<img src="https://github.com/CORE-UPM/P10_Roles/blob/master/Captura.10.3.png" alt="captura de pantalla" width="500"/>
+</kbd>
 
 ## Instrucciones para la Entrega y Evaluación.
 
