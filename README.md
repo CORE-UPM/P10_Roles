@@ -1,7 +1,7 @@
 
-# Práctica 9: Roles
+# Práctica 10: Roles
 
-Versión: 3 de Mayo de 2022
+Versión: 13 de Febrero de 2023
 
 ## Objetivos
 * Afianzar los conocimientos obtenidos sobre el uso de Express para desarrollar servidores web.
@@ -9,7 +9,7 @@ Versión: 3 de Mayo de 2022
 
 ## Descripción de la práctica
 
-En esta práctica 9 se ampliará la **Práctica 8 Autores** añadiendo un sistema de permisos que limiten
+En esta práctica 10 se ampliará la **Práctica 9 Autores** añadiendo un sistema de permisos que limiten
 las operaciones que puede hacer un usuario en funcion de su rol.
 
 Estas limitaciones deben añadirse en los controladores, en las definiciones de rutas y en las vistas.
@@ -42,30 +42,22 @@ Las limitaciones que se añadirán a la práctica son las siguientes:
 
 ## Descargar el código del proyecto
 
-Es necesario utilizar la **versión 16 de Node.js** para el desarrollo de esta práctica.
-El proyecto debe clonarse en el ordenador en el que se está trabajando:
-
-    $ git clone https://github.com/CORE-UPM/P9_Roles
-
-A continuación se debe acceder al directorio de trabajo, e instalar todas las dependencias propias de esta práctica.
-
-    $ cd P9_Roles
-    $ npm install
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#descargar-el-c%C3%B3digo-del-proyecto).
 
 ## Tareas
 
-### Tarea 1 - Copiar el trabajo ya realizado en la Entrega 8 Autores
+### Tarea 1 - Copiar el trabajo ya realizado en la Entrega 9 Autores
 
-En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 8.
+En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 9.
 
-El alumno debe copiar el directorio **blog** de la **Entrega8_autores** en el directorio **P9_Roles/blog** de
-esta práctica 9. Las tareas a realizar en esta práctica 9 de desarrollarán dentro del directorio **P9_Roles/blog**.
+El alumno debe copiar el directorio **blog** de la **Entrega9_autores** en el directorio **P10_Roles/blog** de
+esta práctica 10. Las tareas a realizar en esta práctica 10 de desarrollarán dentro del directorio **P10_Roles/blog**.
 
-Para copiar/duplicar el directorio **Entrega8_autores/blog** en el directorio **P9_Roles/blog**, puede usar un
+Para copiar/duplicar el directorio **Entrega9_autores/blog** en el directorio **P10_Roles/blog**, puede usar un
 explorador de archivos. Asegúrese de copiar el directorio y no de moverlo de sitio, para no perder el trabajo original.
 También puede ejecutar el siguiente comando en un terminal unix para copiar el directorio y todo su contenido:
 
-    $ cp -r PATH_DE_PRACTICA_8/Entrega8_autores/blog PATH_DE_PRACTICA_9/P9_Roles/.
+    $ cp -r PATH_DE_PRACTICA_9/Entrega9_autores/blog PATH_DE_PRACTICA_10/P10_Roles/.
 
 
 Ejecutar las migraciones de las prácticas anteriores en el caso de que no se haya copiado el archivo **.sqlite** con la base de datos:
@@ -122,43 +114,49 @@ El alumno debe añadir en las vistas EJS el código javascript necesario para qu
 Ya puede probar si los botones y enlaces se ocultan o muestran según el rol del usuario logueado.
 
 
-## Prueba de la práctica
+## Pruebas con el autocorector
 
-Para ayudar al desarrollo, se provee una herramienta de autocorrección que prueba las distintas funcionalidades que se piden en el enunciado. Para utilizar esta herramienta debes tener node.js (y npm) (https://nodejs.org/es/) y Git instalados.
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#pruebas-con-el-autocorector).
 
-Para instalar y hacer uso de la herramienta de autocorrección en el ordenador local, ejecuta los siguientes comandos en el directorio raíz del proyecto, es decir, en el directorio padre del directorio **post**:
+## Pruebas manuales y capturas de pantalla
 
-    $ sudo npm install -g autocorector    ## Instala el programa de test
-    $ autocorector                   ## Pasa los tests al fichero a entregar
-    ............................     ## en el directorio de trabajo
-    ... (resultado de los tests)
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#pruebas-manuales-y-capturas-de-pantalla).
 
-También se puede instalar como paquete local, en el caso de que no dispongas de permisos en
-el ordenador en el que estás trabajando:
+Capturas a entregar con esta práctica: 
 
-    $ npm install autocorector     ## Instala el programa de test
-    $ npx autocorector             ## Pasa los tests al fichero a entregar
-    ............................   ## en el directorio de trabajo
-    ... (resultado de los tests)
+- Captura 1: Captura de la pantalla que muestra el listado de todos los posts.
+  Realice esta captura cuando no hay nadie logueado para que no aparezcan los botones de editar o borrar los posts existentes.
+  Tampoco debe aparecer el botón de listar todos los usuarios en la barra de navegación.
+  Realice la captura de forma que se vea el botón de login en la cabecera de la pantalla.
+<kbd>
+<img src="https://user-images.githubusercontent.com/716928/218467403-af74f6ff-17b5-4f69-80ea-0dfb1b8e27e4.png" alt="captura de pantalla" width="500"/>
+</kbd>
 
-Se puede pasar la herramienta de autocorrección tantas veces como se desee sin ninguna repercusión en la calificación.
+- Captura 2: Captura de la pantalla que muestra el listado de todos los posts.
+  Realice esta captura cuando el usuario logueado no es un administrador. Deben verse los botones de editar y borrar los posts creados por el usuario logueado.
+  No debe verse el botón de listar todos los usuarios en la barra de navegación.
+  Y en la cabecera de la pantalla debe mostrarse el nombre del usuario logueado y el botón de logout.
+<kbd>
+<img src="https://user-images.githubusercontent.com/716928/218467424-6a916bb0-18bc-4064-bc0f-733b98f1d206.png" alt="captura de pantalla" width="500"/>
+</kbd>
 
-
+- Captura 3: Captura de la pantalla que muestra el listado de todos los posts.
+  Realice esta captura cuando el usuario logueado es admin. 
+  Deben verse los botones de editar y borrar en todos posts.
+  También debe aparecer el botón de listar todos los usuarios en la barra de navegación.
+  Realice la captura de forma que se vea el nombre admin y el botón de logout en la cabecera de la pantalla.
+<kbd>
+<img src="https://user-images.githubusercontent.com/716928/218467441-af395752-4b4f-4004-b30b-9133b2d61126.png" alt="captura de pantalla" width="500"/>
+</kbd>
 
 ## Instrucciones para la Entrega y Evaluación.
 
-Una vez satisfecho con su calificación, el alumno puede subir su entrega a Moodle con el siguiente comando:
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#instrucciones-para-la-entrega-y-evaluaci%C3%B3n
+).
 
-    $ autocorector --upload
+## Rúbrica
 
-o, si se ha instalado como paquete local:
-
-    $ npx autocorector --upload
-
-La herramienta de autocorrección preguntará por el correo del alumno y el token de Moodle.
-En el enlace **https://www.npmjs.com/package/autocorector** se proveen instrucciones para encontrar dicho token.
-
-**RÚBRICA**: Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
+Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
 
 - **5%:** * No se puede publicar un post si no hay nadie logueado.
 - **3%:** * El botón de crear un post no aparece si no hay nadie logueado.
