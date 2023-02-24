@@ -3,6 +3,8 @@
     "author": "CORE-UPM",
     "license": "GNU",
     "version": "0.1.3",
+    "capturesFolder": "miscapturas",
+    "capturesNumber": 3,
     "info": {
         "githubURL": "CORE-UPM/P10_Roles",
         "serverUrl": "https://aat.dit.upm.es/",
