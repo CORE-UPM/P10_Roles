@@ -1,7 +1,7 @@
 
 # Práctica 10: Roles
 
-Versión: 13 de Febrero de 2023
+Versión: 4 de Marzo de 2023
 
 ## Objetivos
 * Afianzar los conocimientos obtenidos sobre el uso de Express para desarrollar servidores web.
@@ -46,18 +46,18 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 ## Tareas
 
-### Tarea 1 - Copiar el trabajo ya realizado en la Entrega 9 Autores
+### Tarea 1 - Copiar el trabajo ya realizado en la práctica 9.
 
 En esta práctica hay que continuar y ampliar el desarrollo realizado en la práctica 9.
 
-El alumno debe copiar el directorio **blog** de la **Entrega9_autores** en el directorio **P10_Roles/blog** de
+El alumno debe copiar el directorio **blog** de la **P9_Autores** en el directorio **P10_Roles/blog** de
 esta práctica 10. Las tareas a realizar en esta práctica 10 de desarrollarán dentro del directorio **P10_Roles/blog**.
 
-Para copiar/duplicar el directorio **Entrega9_autores/blog** en el directorio **P10_Roles/blog**, puede usar un
+Para copiar/duplicar el directorio **P9_Autores/blog** en el directorio **P10_Roles/blog**, puede usar un
 explorador de archivos. Asegúrese de copiar el directorio y no de moverlo de sitio, para no perder el trabajo original.
 También puede ejecutar el siguiente comando en un terminal unix para copiar el directorio y todo su contenido:
 
-    $ cp -r PATH_DE_PRACTICA_9/Entrega9_autores/blog PATH_DE_PRACTICA_10/P10_Roles/.
+    $ cp -r PATH_DE_PRACTICA_9/P9_Autores/blog PATH_DE_PRACTICA_10/P10_Roles/.
 
 
 Ejecutar las migraciones de las prácticas anteriores en el caso de que no se haya copiado el archivo **.sqlite** con la base de datos:
