@@ -129,7 +129,7 @@ Capturas a entregar con esta práctica:
   Tampoco debe aparecer el botón de listar todos los usuarios en la barra de navegación.
   Realice la captura de forma que se vea el botón de login en la cabecera de la pantalla.
 <kbd>
-<img src="https://user-images.githubusercontent.com/716928/218467403-af74f6ff-17b5-4f69-80ea-0dfb1b8e27e4.png" alt="captura de pantalla" width="500"/>
+<img src="https://github.com/CORE-UPM/P10_Roles/assets/716928/8f6b12e8-bf3f-4ef9-9d8b-f652ceff33d0" alt="captura de pantalla" width="600"/>
 </kbd>
 
 - Captura 2: Captura de la pantalla que muestra el listado de todos los posts.
@@ -137,7 +137,7 @@ Capturas a entregar con esta práctica:
   No debe verse el botón de listar todos los usuarios en la barra de navegación.
   Y en la cabecera de la pantalla debe mostrarse el nombre del usuario logueado y el botón de logout.
 <kbd>
-<img src="https://user-images.githubusercontent.com/716928/218467424-6a916bb0-18bc-4064-bc0f-733b98f1d206.png" alt="captura de pantalla" width="500"/>
+<img src="https://github.com/CORE-UPM/P10_Roles/assets/716928/e25ca196-c5c6-4cc0-8945-67ade3848bb4" alt="captura de pantalla" width="600"/>
 </kbd>
 
 - Captura 3: Captura de la pantalla que muestra el listado de todos los posts.
@@ -146,7 +146,7 @@ Capturas a entregar con esta práctica:
   También debe aparecer el botón de listar todos los usuarios en la barra de navegación.
   Realice la captura de forma que se vea el nombre admin y el botón de logout en la cabecera de la pantalla.
 <kbd>
-<img src="https://user-images.githubusercontent.com/716928/218467441-af395752-4b4f-4004-b30b-9133b2d61126.png" alt="captura de pantalla" width="500"/>
+<img src="https://github.com/CORE-UPM/P10_Roles/assets/716928/1ccf892c-3bf0-4b2a-8637-62f61ae5b25a" alt="captura de pantalla" width="600"/>
 </kbd>
 
 ## Instrucciones para la Entrega y Evaluación.
