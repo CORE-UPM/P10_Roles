@@ -9,7 +9,7 @@
         "githubURL": "CORE-UPM/P10_Roles",
         "serverUrl": "https://aat.dit.upm.es/",
         "courseId": "395",
-        "assignmentId": "457"
+        "assignmentId": "8553"
     },
     "dependencies": {
         "autocorector": "^3.2.2",
