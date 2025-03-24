@@ -1,7 +1,7 @@
 
 # Práctica 10: Roles
 
-Versión: 23 de Enero de 2024
+Versión: 24 de Marzo de 2025
 
 ## Objetivos
 * Afianzar los conocimientos obtenidos sobre el uso de Express para desarrollar servidores web.
@@ -27,7 +27,7 @@ le están permitidos al usuario en funcion de su rol.
 El desarrollo pedido en esta práctica es igual al realizado en el mini proyecto **Autores y Autorización** visto
 en las clases teóricas de la asignatura.
 En el mini proyecto **Autores y Autorización** se impedía la ejecución de algunas primitivas en funcion del rol 
-del usuario, y en esta práctica se aplicarán las mismas limitataciones, y se definiran otras nuevas.
+del usuario, y en esta práctica se aplicarán las mismas limitaciones, y se definirán otras nuevas.
 
 Las limitaciones que se añadirán a la práctica son las siguientes:
 
@@ -62,7 +62,7 @@ También puede ejecutar el siguiente comando en un terminal unix para copiar el 
 
 Ejecutar las migraciones de las prácticas anteriores en el caso de que no se haya copiado el archivo **.sqlite** con la base de datos:
 
-    $ npm run migrate    ## sistemas unix
+    $ npm run migrate       ## sistemas unix
     $ npm run migrate_win   ## sistemas windows
 
 y probar el funcionamiento del nuevo servidor.
