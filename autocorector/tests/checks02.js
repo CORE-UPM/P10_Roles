@@ -18,7 +18,7 @@ let browser = create_browser();
 var server;
 
 
-describe("Tests Práctica 10", function() {
+describe("Tests Práctica 10 - Servicio Web", function() {
     after(function () {
         warn_errors();
     });

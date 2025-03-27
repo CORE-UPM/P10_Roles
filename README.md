@@ -1,7 +1,7 @@
 
 # Práctica 10: Roles
 
-Versión: 24 de Marzo de 2025
+Versión: 27 de Marzo de 2025
 
 ## Objetivos
 * Afianzar los conocimientos obtenidos sobre el uso de Express para desarrollar servidores web.
@@ -156,7 +156,14 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 ## Rúbrica
 
-Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
+Antes de evaluar la práctica se realizarán un serie de comprobaciones:
+- Existe el directorio blog.
+- Las tablas de la base de datos son correctas.
+- Se ha usado correctamente el marco de aplicación.
+- Existen los ficheros pedidos: controladores, migraciones, seeders, ...
+- Se han creado los scripts pedidos en package.json.
+
+Una vez superadas las comprobaciones anteriores,
 
 - **5%:** * No se puede publicar un post si no hay nadie logueado.
 - **3%:** * El botón de crear un post no aparece si no hay nadie logueado.
