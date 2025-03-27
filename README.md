@@ -164,6 +164,7 @@ Antes de evaluar la práctica se realizarán un serie de comprobaciones:
 - Se han creado los scripts pedidos en package.json.
 
 Una vez superadas las comprobaciones anteriores,
+se puntuará la práctica sumando el % indicado a la nota total si la parte indicada es correcta:
 
 - **5%:** * No se puede publicar un post si no hay nadie logueado.
 - **3%:** * El botón de crear un post no aparece si no hay nadie logueado.
