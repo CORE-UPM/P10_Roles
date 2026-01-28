@@ -114,6 +114,12 @@ describe("Tests Práctica 10 - Servicio Web", function() {
         });
 
 
+        scored(`Comprobar que se ha creado el fichero de configuración de Sequelize`, -1, async function () {
+            this.msg_ok = 'Se incluye config/config.json';
+            this.msg_err = 'No se ha encontrado config/config.json';
+            fs.existsSync(path.join(PATH_ASSIGNMENT, "config", "config.json")).should.be.equal(true);
+        });
+
         scored(`Comprobar que la migración y el seeder para Usuarios existen (P7)`, -1, async function () {
             this.msg_ok = 'Se incluye la migración y el seeder';
 
@@ -188,10 +194,8 @@ describe("Tests Práctica 10 - Servicio Web", function() {
             this.msg_err = 'No se han encontrado todos los scripts';
             scripts = {
                 "super": "supervisor ./bin/www",
-                "migrate": "sequelize db:migrate --url sqlite://$(pwd)/blog.sqlite",  
-                "seed": "sequelize db:seed:all --url sqlite://$(pwd)/blog.sqlite",  
-                "migrate_win": "sequelize db:migrate --url sqlite://%cd%/blog.sqlite",  
-                "seed_win": "sequelize db:seed:all --url sqlite://%cd%/blog.sqlite"  ,
+                "migrate": "sequelize db:migrate",
+                "seed": "sequelize db:seed:all",
             };
             for(script in scripts){
                 this.msg_err = `Falta el comando para ${script}`;
@@ -202,9 +206,12 @@ describe("Tests Práctica 10 - Servicio Web", function() {
     });
 
     describe("Tests funcionales", function () {
-        var server;
-        var sequelize;
-        const db_filename = 'blog.sqlite';
+        let server;
+
+        const databaseConfigPath = path.resolve(path.join(__dirname, "..", "config", "config.json"));
+        process.env.DATABASE_CONFIG_PATH = databaseConfigPath;
+
+        const db_filename = 'autocorector.sqlite';
         const db_file = path.resolve(path.join(ROOT, db_filename));
 
         const cookie_name = 'connect.sid';
@@ -259,18 +266,22 @@ describe("Tests Práctica 10 - Servicio Web", function() {
             }
             fs.closeSync(fs.openSync(db_file, 'w'));
 
-            let sequelize_cmd = path.join(PATH_ASSIGNMENT, "node_modules", ".bin", "sequelize")
-            let db_url = `sqlite://${db_file}`;
-            let db_relative_url = `sqlite://${db_filename}`;
-            sequelize = new Sequelize(db_relative_url);
-            await exec(`${sequelize_cmd} db:migrate --url "${db_url}" --migrations-path ${path.join(PATH_ASSIGNMENT, "migrations")}`);
+            let sequelize_cmd = path.join(PATH_ASSIGNMENT, "node_modules", ".bin", "sequelize");
+            await exec(`"${sequelize_cmd}" db:migrate --config "${databaseConfigPath}" --migrations-path "${path.join(PATH_ASSIGNMENT, "migrations")}"`);
             debug('Lanzada la migración');
-            await exec(`${sequelize_cmd} db:seed:all --url "${db_url}" --seeders-path ${path.join(PATH_ASSIGNMENT, "seeders")}`);
+            await exec(`"${sequelize_cmd}" db:seed:all --config "${databaseConfigPath}" --seeders-path "${path.join(PATH_ASSIGNMENT, "seeders")}"`);
             debug('Lanzado el seeder');
 
 
             let bin_path = path.join(PATH_ASSIGNMENT, "bin", "www");
-            server = spawn('node', [bin_path], {env: {DEBUG: DEBUG, PORT: TEST_PORT, DATABASE_URL: db_relative_url, PATH: process.env.PATH}});
+            server = spawn('node', [bin_path], {
+                env: {
+                    DEBUG: DEBUG,
+                    PORT: TEST_PORT,
+                    PATH: process.env.PATH,
+                    DATABASE_CONFIG_PATH: databaseConfigPath
+                }
+            });
             server.stdout.setEncoding('utf-8');
             server.stdout.on('data', function(data) {
                 debug('Salida del servidor: ', data);
